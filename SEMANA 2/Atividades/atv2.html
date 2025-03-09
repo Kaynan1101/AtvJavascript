@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function horas() {
+        let data = new Date();
+        let hora = data.getHours().toString().padStart(2, "0");
+        let minuto = data.getMinutes().toString().padStart(2, "0");
+        let segundo = data.getSeconds().toString().padStart(2, "0");
+        document.getElementById(
+          "relogio"
+        ).textContent = `${hora}:${minuto}:${segundo}`;
+        setTimeout(horas, 1000);
+      }
+
+      window.onload = horas;
+    </script>
+  </head>
+  <body>
+    <div id="relogio"></div>
+  </body>
+</html>

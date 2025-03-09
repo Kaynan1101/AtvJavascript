@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEMAN 2</title>
+    <script text="text/javascript">
+      let data = new Date();
+      let diaDaSemana = [
+        "Domingo",
+        "Segunda",
+        "Terça",
+        "Quarta",
+        "Quinta",
+        "Sexta",
+        "Sábado",
+      ];
+      let mes = [
+        "Janeiro",
+        "Fevereiro",
+        "Março",
+        "Abril",
+        "Maio",
+        "Junho",
+        "Julho",
+        "Agosto",
+        "Setembro",
+        "Outubro",
+        "Novembro",
+        "Dezembro",
+      ];
+      let mesHoje = mes[data.getMonth()];
+      let diaDaSemanaHoje = diaDaSemana[data.getDay()];
+      document.write(
+        diaDaSemanaHoje +
+          ", " +
+          data.getDate() +
+          " de " +
+          mesHoje +
+          " de " +
+          data.getFullYear()
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
