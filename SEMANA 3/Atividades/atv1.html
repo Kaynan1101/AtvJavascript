@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let usuario = [];
+      function adicionar() {
+        var nome = document.getElementById("algo").value;
+        usuario.push(nome);
+        document.getElementById("lista").innerHTML = usuario;
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="algo" placeholder="Digite alguma coisa" />
+    <button onclick="adicionar()">Adicionar</button>
+    <div id="lista"></div>
+  </body>
+</html>
