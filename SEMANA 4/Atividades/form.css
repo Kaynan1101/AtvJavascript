@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  width: 600px;
+  margin: 20px auto;
+}
+h1 {
+  margin-bottom: 20px;
+}
+form {
+  width: 100%;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  vertical-align: top;
+  padding: 8px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-left: 5px;
+}
+
+.radio-group {
+  padding-top: 26px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.buttons {
+  text-align: center;
+  padding: 15px 0;
+}
+.buttons input {
+  margin: 0 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}

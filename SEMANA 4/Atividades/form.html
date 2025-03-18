@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Formulário de Cadastro</h1>
+      <form>
+        <table>
+          <tr>
+            <td>
+              <label for="nome">Nome:</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome completo"
+                required
+              />
+            </td>
+            <td>
+              <label for="data-nascimento">Data Nascimento:</label>
+              <input
+                type="text"
+                id="data-nascimento"
+                name="data-nascimento"
+                placeholder="dd/mm/aaaa"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="fulano.com"
+                required
+              />
+              <span class="error-message">Email inválido</span>
+            </td>
+
+            <td class="radio-group">
+              <input
+                type="radio"
+                id="professor"
+                name="tipo"
+                value="Professor"
+              />
+              <label for="professor" style="font-weight: normal"
+                >Professor</label
+              >
+              <br />
+              <input
+                type="radio"
+                id="aluno"
+                name="tipo"
+                value="Aluno"
+                checked
+              />
+              <label for="aluno" style="font-weight: normal">Aluno</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="telefone-fixo">Telefone Fixo:</label>
+              <input
+                type="text"
+                id="telefone-fixo"
+                name="telefone-fixo"
+                placeholder="(99) 9999-9999"
+              />
+            </td>
+            <td>
+              <label for="telefone-celular">Telefone Celular:</label>
+              <input
+                type="text"
+                id="telefone-celular"
+                name="telefone-celular"
+                placeholder="(99) 99999-9999"
+              />
+            </td>
+          </tr>
+          <div class="container">
+            <tr>
+              <td>
+                <label for="curso">Curso:</label>
+                <input
+                  type="text"
+                  id="curso"
+                  name="curso"
+                  placeholder="Digite seu curso"
+                />
+              </td>
+              <td>
+                <label for="area">Área:</label>
+                <input
+                  type="text"
+                  id="area"
+                  name="area"
+                  placeholder="Digite sua area"
+                />
+              </td>
+              <td>
+                <label for="lattes">Lattes:</label>
+                <input
+                  type="text"
+                  id="lattes"
+                  name="lattes"
+                  placeholder="Digite seu número lattes"
+                />
+              </td>
+              <td>
+                <label for="matricula">Matrícula:</label>
+                <input
+                  type="text"
+                  id="matricula"
+                  name="matricula"
+                  placeholder="Digite sua matrícula"
+                />
+              </td>
+            </tr>
+          </div>
+          <tr>
+            <td colspan="2" class="buttons">
+              <input type="submit" value="Enviar" />
+              <input type="reset" value="Redefinir" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <script lang="JavaScript" src="form.js"></script>
+  </body>
+</html>
