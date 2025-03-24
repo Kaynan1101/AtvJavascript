@@ -1,54 +1,71 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
 }
+
 .container {
   width: 600px;
-  margin: 20px auto;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-h1 {
+
+h3 {
+  text-align: center;
   margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #333;
 }
-form {
-  width: 100%;
-}
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-td {
-  vertical-align: top;
-  padding: 8px;
-}
+
 label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
 }
 
 .error-message {
   color: red;
   font-size: 0.9em;
-  margin-left: 5px;
-}
-
-.radio-group {
-  padding-top: 26px;
-}
-
-input[type="text"],
-input[type="email"] {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 5px;
-  margin-bottom: 5px;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
 .buttons {
   text-align: center;
-  padding: 15px 0;
+  margin-top: 20px;
 }
+
 .buttons input {
-  margin: 0 5px;
-  padding: 8px 16px;
+  padding: 20px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f4f4f4;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons input:hover {
+  background-color: #ddd;
 }
