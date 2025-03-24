@@ -6,127 +6,99 @@
     <link rel="stylesheet" href="form.css" />
   </head>
   <body class="container">
-    <h3 class="mt-2">Formulário de Cadastro:</h3>
+    <h3>Formulário de Cadastro:</h3>
     <form>
-      <div class="row mt-3">
-        <div class="col mb-3">
-          <label for="nome" class="form-label">Nome</label>
-          <input
-            type="text"
-            id="nome"
-            name="nome"
-            placeholder="Digite seu nome completo"
-            class="form-control"
-            required
-          />
-        </div>
+      <div>
+        <label for="nome" class="form-label">Nome</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Digite seu nome completo"
+          class="form-control"
+          required
+        />
       </div>
-      <div class="row mt-3">
-        <div class="col-9 mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="fulano.com"
-            class="form-control"
-            required
-          />
-        </div>
-        <div class="col-3 mb-3">
-          <label for="nascimento" class="form-label">Data de nascimento</label>
-          <input
-            type="date"
-            id="nascimento"
-            name="nascimento"
-            class="form-control"
-            required
-          />
-        </div>
+      <div>
+        <label for="email" class="form-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="fulano.com"
+          class="form-control"
+          required
+        />
       </div>
-      <div class="row mt-3">
-        <div class="col mb-3">
-          <label for="fixo" class="form-label">Telefone fixo</label>
-          <input
-            type="text"
-            id="fixo"
-            name="fixo"
-            placeholder="(99)9999-9999"
-            class="form-control"
-            required
-          />
-        </div>
-        <div class="col mb-3">
-          <label for="celular" class="form-label">Telefone celular</label>
-          <input
-            type="text"
-            id="celular"
-            name="celular"
-            placeholder="(99)99999-9999"
-            class="form-control"
-            required
-          />
-        </div>
-        <div class="col mb-3">
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="tipoPessoa"
-              id="professor"
-              value="professor"
-            />
-            <label class="form-check-label" for="professor"> Professor </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="tipoPessoa"
-              id="aluno"
-              value="aluno"
-            />
-            <label class="form-check-label" for="aluno"> Aluno </label>
-          </div>
-        </div>
+      <div>
+        <label for="nascimento" class="form-label">Data de nascimento</label>
+        <input
+          type="date"
+          id="nascimento"
+          name="nascimento"
+          class="form-control"
+          required
+        />
       </div>
-      <div class="row mt-3">
-        <div class="col-5 mb-3">
-          <label for="matricula" class="form-label">Matrícula</label>
-          <input
-            type="number"
-            id="matricula"
-            name="matricula"
-            placeholder="Digite sua matrícula"
-            class="form-control"
-            required
-          />
-        </div>
+      <div>
+        <label for="fixo" class="form-label">Telefone fixo</label>
+        <input
+          type="text"
+          id="fixo"
+          name="fixo"
+          placeholder="(99)9999-9999"
+          class="form-control"
+          required
+        />
       </div>
-      <div class="row mt-3">
-        <div class="col-12">
-          <div id="formCamposExtras"></div>
-        </div>
+      <div>
+        <label for="celular" class="form-label">Telefone Celular</label>
+        <input
+          type="text"
+          id="celular"
+          name="celular"
+          placeholder="(99)99999-9999"
+          class="form-control"
+          required
+        />
       </div>
-      <div class="row mt-4">
-        <div class="col-1">
-          <button type="button" id="enviar" class="btn btn-primary">
-            Enviar
-          </button>
-        </div>
-        <div class="col-1">
-          <button type="reset" id="redefinir" class="btn btn-secondary">
-            Redefinir
-          </button>
-        </div>
+      <div>
+        <label class="form-label">Tipo de Pessoa</label>
+        <input
+          type="radio"
+          id="aluno"
+          name="tipoPessoa"
+          value="aluno"
+          required
+        />
+        Aluno
+        <input
+          type="radio"
+          id="professor"
+          name="tipoPessoa"
+          value="professor"
+          required
+        />
+        Professor
       </div>
-      <div class="row mt-3">
-        <div>
-          <pre id="resultado"></pre>
-        </div>
+      <div id="formCamposExtras"></div>
+      <div>
+        <label for="matricula" class="form-label">Matrícula</label>
+        <input
+          type="number"
+          id="matricula"
+          name="matricula"
+          placeholder="Digite sua matrícula"
+          class="form-control"
+          required
+        />
+      </div>
+      <div class="buttons">
+        <button id="enviar" type="button">Enviar</button>
+        <button id="redefinir" type="button">Redefinir</button>
       </div>
     </form>
-
-    <script lang="JavaScript" src="form.js"></script>
+    <div id="resultado"></div>
+    <script src="form.js"></script>
   </body>
 </html>
