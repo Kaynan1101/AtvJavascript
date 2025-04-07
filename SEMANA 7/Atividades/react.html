@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Adicionando react à página</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Letreiro() {
+        const [texto, setTexto] = React.useState("");
+        const mensagem = "Venha estudar na Fatec";
+
+        React.useEffect(() => {
+          let index = 0;
+          const interval = setInterval(() => {
+            setTexto(mensagem.slice(0, index + 1));
+            index++;
+            if (index === mensagem.length) clearInterval(interval);
+          }, 100);
+
+          return () => clearInterval(interval);
+        }, []);
+        return <h1>{texto}</h1>;
+      }
+
+      const container = document.getElementById("root");
+      const root = ReactDOM.createRoot(container);
+      root.render(<Letreiro />);
+    </script>
+  </body>
+</html>
